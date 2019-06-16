@@ -15,11 +15,11 @@ exports.post = (req, res, next) => {
 
 
 exports.put = (req, res, next) => {
-    let id = req.params.id;
-    res.status(204).send(`Pedido alterado com sucesso! ${id}`);
+    
+    res.status(200).send('Pedido alterado com sucesso!');
 };
 
 exports.delete = (req, res, next) => {
     let id = req.params.id;
-    res.status(204).send(`Pedido removido com sucesso! ${id}`);
+    res.status(200).send('Pedido removido com sucesso!');
 };
